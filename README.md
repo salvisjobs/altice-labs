@@ -108,7 +108,9 @@ docker-compose run
 After that open you browser and access the link
 
 ```
-http://localhost:4200/
+FRONTEND: http://localhost:4200/
+BACKEND:  http://localhost:8085/api/v1/labseq
+SWAGGER:  http://localhost:8085/swagger-ui/index.html
 ```
 After that open you browser and access the link
 
