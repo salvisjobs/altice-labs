@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /
+  port: 8085
+
+spring:
+  profiles:
+    active: local
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      show-details: always

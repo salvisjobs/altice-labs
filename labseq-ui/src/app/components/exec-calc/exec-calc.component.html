@@ -1,0 +1,29 @@
+<div class="container" style="margin-left: 25%; margin-top: 180px; margin-bottom: 50px; width: 50%; height: 300; padding: 10px;">
+    <div class="row">
+        <!-- Form -->
+        <div class="col-md-12">
+            <h3>Execute Calc Sequence</h3>
+            <form [formGroup]="sequenceFrm" (ngSubmit)="submitForm()" novalidate>
+                <div class="row col-md-8">
+                    <div class="form-group" style="padding: 10px;">
+                            <h6>Algarism</h6>
+                            <div class="input-group mb-3">
+                                <input type="number" formControlName="algarism" maxlength="10" class="form-control" placeholder="Insert algarism to start the sequence" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                  <button class="btn btn-primary" type="submit" id="button-addon2" (submit)="submitForm()">Get Sequence</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="container">
+                    <div class="form-group">
+                        <label>Sequence Details</label>
+                        <textarea [value]="sequenceArr" class="form-control" formControlName="sequence" rows="10" maxlength="500">
+                        </textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
